@@ -4,7 +4,7 @@ Adafruit Matric Portal M4 App initial made for RUCHacks Spring '23 (written for 
 
 ## Setup
 
-Following the assembly and prep instructions [here](https://learn.adafruit.com/adafruit-matrixportal-m4/prep-the-matrixportal). You will need to flash the board with the [bootloader](https://learn.adafruit.com/adafruit-matrixportal-m4/install-circuitpython). A known working version is included here, but you can download and test newer versions too.
+Follow the assembly and prep instructions [here](https://learn.adafruit.com/adafruit-matrixportal-m4/prep-the-matrixportal). You will need to flash the board with the [bootloader](https://learn.adafruit.com/adafruit-matrixportal-m4/install-circuitpython). A known working version is included here, but you can download and test newer versions too.
 
 Once the board is configured, just copy the contents of [`./src`](./src) to the root of the board's drive (**do not include `src`, just its contents!**). If you plan on using the WiFi capabilities you will need to configure the `secrets.py` file with your 2.4Gz WiFi access point.
 
@@ -47,4 +47,4 @@ WARNING: This is a development server. Do not use it in a production deployment.
 Press CTRL+C to quit
 ```
 
-The address that the Matrix Portal can see is `http://192.168.1.159:5000` and so we want to place that URL in `code.py`. Note that your valid address may be different depending on your router/modem!. Once there the weather mode should pull the weather for the location specified in the server (the bit `PHI/40,75` is approximately Camden COunty)
+The address that the Matrix Portal can see is `http://192.168.1.159:5000` and so we want to place that URL in `code.py`. Note that your valid address may be different depending on your router/modem!. Once there the weather mode should pull the weather for the location specified in the server (the bit `PHI/40,75` is approximately Camden County)
